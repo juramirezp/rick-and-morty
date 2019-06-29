@@ -33,6 +33,7 @@ btnMoreData.addEventListener('click',()=>{
                 document.getElementById('personajes').innerHTML += `
                 <div class="card">
                 <img src="${data.results[i].image}" alt="">
+                <h3>${data.results[i].name}</h3>
                 <p>Estado: ${data.results[i].status}</p>
                 <p>Especie: ${data.results[i].species}</p>
                 </div>`;
