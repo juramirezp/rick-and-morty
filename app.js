@@ -11,6 +11,7 @@ fetch('https://rickandmortyapi.com/api/character/')
             document.getElementById('personajes').innerHTML += `
             <div class="card">
             <img src="${dataApi.results[i].image}" alt="">
+            <h3>${dataApi.results[i].name}</h3>
             <p>Estado: ${dataApi.results[i].status}</p>
             <p>Especie: ${dataApi.results[i].species}</p>
             </div>`;
